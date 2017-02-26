@@ -1,0 +1,17 @@
+
+import java.util.Scanner;
+public class babylonian
+{
+  public static void main(String[] args) {
+         Scanner keyboard = new Scanner(System.in);
+         double num; //declares num
+         double guess; //declare guess
+         double error=.0001; //initialize error         
+
+         System.out.println("Enter a number you want to find the square root of.");
+         num = keyboard.nextDouble();//allows user to enter a number to takw square root of
+         guess=num/2; //
+         
+         double squareRoot = squareRoot(num, guess, error); //Calls squareRoot method
+         System.out.println("The answer is: " + squareRoot);//prints out answer 
+     }
