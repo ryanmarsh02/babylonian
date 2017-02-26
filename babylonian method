@@ -1,0 +1,9 @@
+ public static double squareRoot(double num, double guess, double error) {
+    double answer=Math.abs((guess*guess)-num);
+    if (answer <= error){
+      return guess;
+    }
+    else 
+      return squareRoot(num, .5*(guess+(num/guess)), error);
+  }
+}
